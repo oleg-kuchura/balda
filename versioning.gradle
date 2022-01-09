@@ -1,0 +1,19 @@
+ext {
+
+    versionMajor = 1
+    versionMinor = 0
+    versionPatch = 0
+    versionBuild = 1
+
+    buildVersionCode = {
+        (versionMajor * 100000000) + (versionMinor * 1000000) + (versionPatch * 10000) + versionBuild
+    }
+
+    buildVersionName = {
+        "${versionMajor}.${versionMinor}.${versionPatch}"
+    }
+
+    buildVersionNameDebug = {
+        "${versionMajor}.${versionMinor}.${versionPatch}.${versionBuild}"
+    }
+}
