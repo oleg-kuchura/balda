@@ -2,4 +2,18 @@
     <string name="app_name">Balda</string>
 
     <string name="empty_screen">Empty Screen</string>
+
+    // --- MAIN SCREEN ---
+    // Main screen buttons
+    <string name="start_one_man_game">Start one-man game</string>
+    <string name="start_game_with_android">Start game with android</string>
+    <string name="start_game_with_friends">Start game with friends</string>
+    <string name="settings">Settings</string>
+    // Main screen logo
+    <string name="logo_first_char">B</string>
+    <string name="logo_second_char">A</string>
+    <string name="logo_third_char">L</string>
+    <string name="logo_fourth_char">D</string>
+    <string name="logo_fifth_char">A</string>
+
 </resources>
