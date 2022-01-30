@@ -3,6 +3,7 @@
     package="com.basik.balda">
 
     <application
+        android:name=".BaldaApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
