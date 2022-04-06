@@ -68,6 +68,9 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
 
+    // Navigation
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.4.0-rc01'
+
     // Material Views
     implementation 'com.google.android.material:material:1.5.0'
 
@@ -82,8 +85,7 @@ dependencies {
     kapt "com.google.dagger:dagger-android-processor:$daggerVersion"
     kapt "com.google.dagger:dagger-compiler:$daggerVersion"
 
-
-    // Navigation
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.4.0-rc01'
+    // Timber
+    implementation "com.jakewharton.timber:timber:4.7.1"
 
 }
