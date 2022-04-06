@@ -59,7 +59,7 @@ android {
 
 dependencies {
 
-    def daggerVersion = '2.37'
+    def daggerVersion = '2.40.5'
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
