@@ -31,7 +31,7 @@ class BaldaApp: Application() {
 
     private fun initializeDagger() {
         appComponent = DaggerAppComponent.builder()
-            .appModule(AppModule(this, this))
+            .appModule(AppModule(this))
             .build()
     }
 }
