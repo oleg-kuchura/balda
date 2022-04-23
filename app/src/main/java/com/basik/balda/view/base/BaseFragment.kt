@@ -13,7 +13,7 @@ import java.lang.reflect.InvocationTargetException
 import java.lang.reflect.ParameterizedType
 import javax.inject.Inject
 
-open class BaseFragment<B : ViewDataBinding, VM : BaseViewModel> : Fragment() {
+open class BaseFragment<B : ViewDataBinding> : Fragment() {
 
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
@@ -23,11 +23,9 @@ open class BaseFragment<B : ViewDataBinding, VM : BaseViewModel> : Fragment() {
         get() = nullablebinding
             ?: throw IllegalStateException("Binding ${binding.javaClass} not attached to an fragment.")
 
-    protected lateinit var viewModel: VM
-
     override fun onAttach(context: Context) {
         @Suppress("UNCHECKED_CAST")
-        BaldaApp.instance?.appComponent?.inject(this as BaseFragment<ViewDataBinding, BaseViewModel>)
+        BaldaApp.instance?.appComponent?.inject(this as BaseFragment<ViewDataBinding>)
         super.onAttach(context)
     }
 
@@ -36,7 +34,6 @@ open class BaseFragment<B : ViewDataBinding, VM : BaseViewModel> : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        setupViewModel()
         setupBinding(inflater, container)
         return binding.root
     }
@@ -66,22 +63,9 @@ open class BaseFragment<B : ViewDataBinding, VM : BaseViewModel> : Fragment() {
         }
     }
 
-    private fun setupViewModel() {
-        try {
-            viewModel = ViewModelProvider(this, viewModelFactory).get(makeViewModel())
-        } catch (e: Exception) {
-            e.printStackTrace()
-        }
-    }
-
     private fun makeBinding(): Class<B> {
         @Suppress("UNCHECKED_CAST")
         return getGenericSuperclass().actualTypeArguments[0] as Class<B>
-    }
-
-    private fun makeViewModel(): Class<VM> {
-        @Suppress("UNCHECKED_CAST")
-        return getGenericSuperclass().actualTypeArguments[1] as Class<VM>
     }
 
     private fun getGenericSuperclass(): ParameterizedType {

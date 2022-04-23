@@ -2,7 +2,6 @@ package com.basik.balda.di
 
 import androidx.databinding.ViewDataBinding
 import com.basik.balda.view.base.BaseFragment
-import com.basik.balda.view.base.BaseViewModel
 import dagger.Component
 import javax.inject.Singleton
 
@@ -13,6 +12,6 @@ import javax.inject.Singleton
 ])
 interface AppComponent {
 
-    fun inject(baseFragment: BaseFragment<ViewDataBinding, BaseViewModel>)
+    fun inject(baseFragment: BaseFragment<ViewDataBinding>)
 
 }
