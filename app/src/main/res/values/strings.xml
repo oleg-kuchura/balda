@@ -16,4 +16,17 @@
     <string name="logo_fourth_char">D</string>
     <string name="logo_fifth_char">A</string>
 
+    // --- GAME OPTIONS SCREEN ---
+    <string name="settings_for_one_man_game">Settings for one-man game</string>
+    <string name="settings_for_multiplayer_game">Settings for multiplayer game</string>
+    <string name="enter_init_word">Enter the initial word</string>
+    <string name="hint_init_word">Initial word</string>
+    <string name="enter_players">Enter player names</string>
+    <string name="hint_player_name">Name of player</string>
+    <string name="choose_field_size">Choose field size</string>
+    <string name="choose_field_type">Choose field type</string>
+    <string name="field_type_square">Square</string>
+    <string name="field_type_hexagon">Hexagon</string>
+    <string name="start_game">Start game</string>
+
 </resources>

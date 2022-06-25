@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Балда</string>
+
+    <string name="empty_screen">Пустой екран</string>
+
+    // --- MAIN SCREEN ---
+    // Main screen buttons
+    <string name="start_one_man_game">Начать одиночную игру</string>
+    <string name="start_game_with_android">Начать игру с системой</string>
+    <string name="start_game_with_friends">Начать игру с друзьями</string>
+    <string name="settings">Настройки</string>
+    // Main screen logo
+    <string name="logo_first_char">B</string>
+    <string name="logo_second_char">A</string>
+    <string name="logo_third_char">L</string>
+    <string name="logo_fourth_char">D</string>
+    <string name="logo_fifth_char">A</string>
+
+    // --- GAME SETTINGS SCREEN ---
+    <string name="settings_for_one_man_game">Настройки одиночной игры</string>
+    <string name="settings_for_multiplayer_game">Настройки многопользовательской игры</string>
+    <string name="enter_init_word">Введите начальное слово</string>
+    <string name="hint_init_word">Начальное слово</string>
+    <string name="enter_players">Введите имена игроков</string>
+    <string name="hint_player_name">Имя игрока</string>
+    <string name="choose_field_size">Выберите размер поля</string>
+    <string name="choose_field_type">Выберите тип поля</string>
+    <string name="field_type_square">Квадрат</string>
+    <string name="field_type_hexagon">Шестиугольник</string>
+    <string name="start_game">Начать игру</string>
+
+</resources>

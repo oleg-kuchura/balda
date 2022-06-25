@@ -9,6 +9,16 @@
         android:id="@+id/mainMenuFragment"
         android:name="com.basik.balda.view.fragments.MainMenuFragment"
         android:label="MainMenuFragment"
-        tools:layout="@layout/fragment_main_menu"/>
+        tools:layout="@layout/fragment_main_menu">
+        <action
+            android:id="@+id/toGameOptions"
+            app:destination="@id/gameOptionsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/gameOptionsFragment"
+        android:name="com.basik.balda.view.fragments.game_options.GameOptionsFragment"
+        android:label="GameOptionsFragment"
+        tools:layout="@layout/fragment_game_options"/>
 
 </navigation>

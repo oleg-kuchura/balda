@@ -29,4 +29,12 @@
         <item name="android:paddingBottom">16dp</item>
     </style>
 
+    <style name="MyEditTextStyle" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="colorPrimary">@color/colorAccent</item>
+    </style>
+
+    <style name="ChipPlayer" parent="TextAppearance.MaterialComponents.Chip">
+        <item name="fontFamily">@font/montserrat_semi_bold</item>
+    </style>
+
 </resources>

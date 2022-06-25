@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="colorPrimary">@color/grayDark1</color>
-    <color name="colorPrimaryDark">@color/grayDark2</color>
-
+    // Color palette
     <color name="white">#FFFFFFFF</color>
 
     <color name="teal_200">#FF03DAC5</color>
@@ -20,6 +18,19 @@
     <color name="grayDark2">#424242</color>
     <color name="grayDark3">#292929</color>
 
+    <color name="red">#CF0000</color>
+
     <color name="black">#FF000000</color>
+
+    // Named colors
+    <color name="colorPrimary">@color/grayDark1</color>
+    <color name="colorPrimaryDark">@color/grayDark2</color>
+    <color name="colorAccent">@color/green3</color>
+
+    <color name="backgroundScreen">@color/grayLight1</color>
+
+    <color name="disabledColor">@color/grayLight3</color>
+
+    <color name="colorError">@color/red</color>
 
 </resources>
